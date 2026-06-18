@@ -50,21 +50,16 @@ a {
 }
 
 .logo {
-  font-weight: 800;
-  font-size: 1.3rem;
-  letter-spacing: -0.04em;
-  text-transform: lowercase;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
 }
 
-.logo::before {
-  content: "";
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  margin-right: 8px;
-  border-radius: 50%;
-  background: var(--yellow);
-  vertical-align: middle;
+.logo img {
+  height: 46px;
+  width: auto;
+  display: block;
+}
 }
 
 nav {
