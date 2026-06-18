@@ -223,7 +223,7 @@ h3 {
 }
 
 .contact .eyebrow {
-  color: #5c4a00;
+  color: var(--black);
 }
 
 .contact-box {
