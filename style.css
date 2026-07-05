@@ -593,3 +593,200 @@ grid-template-columns:1fr;
 }
 
 }
+
+
+
+/* ======================= */
+/* CONTACT */
+/* ======================= */
+
+.contact{
+
+padding:120px 0;
+
+background:
+
+linear-gradient(135deg,
+
+#faf8f2,
+
+#f4ecda);
+
+}
+
+.contact-grid{
+
+display:grid;
+
+grid-template-columns:1fr .9fr;
+
+gap:70px;
+
+align-items:center;
+
+}
+
+.contact-buttons{
+
+display:flex;
+
+gap:18px;
+
+margin-top:40px;
+
+flex-wrap:wrap;
+
+}
+
+.contact-card{
+
+background:white;
+
+padding:45px;
+
+border-radius:30px;
+
+box-shadow:
+
+0 30px 80px rgba(0,0,0,.08);
+
+}
+
+.contact-card h3{
+
+font-size:34px;
+
+margin-bottom:35px;
+
+}
+
+.address{
+
+font-size:26px;
+
+font-weight:700;
+
+line-height:1.4;
+
+margin-bottom:30px;
+
+}
+
+.contact-card hr{
+
+margin:30px 0;
+
+border:none;
+
+border-top:1px solid #ececec;
+
+}
+
+.contact-card p{
+
+margin-bottom:24px;
+
+font-size:18px;
+
+}
+
+.contact-card a{
+
+text-decoration:none;
+
+color:var(--gold-dark);
+
+font-weight:700;
+
+}
+
+.maps-button{
+
+display:inline-flex;
+
+margin-top:20px;
+
+padding:16px 28px;
+
+background:var(--gold);
+
+color:white !important;
+
+border-radius:999px;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.maps-button:hover{
+
+background:var(--gold-dark);
+
+}
+
+/* ======================= */
+/* FOOTER */
+/* ======================= */
+
+footer{
+
+background:#171717;
+
+padding:45px 0;
+
+color:white;
+
+}
+
+.footer{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:20px;
+
+}
+
+.footer a{
+
+color:#d8c087;
+
+text-decoration:none;
+
+margin-left:24px;
+
+}
+
+.footer a:hover{
+
+color:white;
+
+}
+
+@media(max-width:900px){
+
+.contact-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.footer{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.address{
+
+font-size:22px;
+
+}
+}
