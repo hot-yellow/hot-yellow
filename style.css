@@ -90,12 +90,26 @@ justify-content:space-between;
 }
 
 
-.logo img{
 
-height: 80px;
-    width: auto;
+.logo{
+
+    position:absolute;
+
+    left:50%;
+
+    transform:translateX(-50%);
 
 }
+
+.logo img{
+
+    height:80px;
+
+    width:auto;
+
+}
+
+
 
 .nav{
     position: relative;
