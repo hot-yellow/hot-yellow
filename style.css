@@ -90,14 +90,6 @@ justify-content:space-between;
 }
 
 
-.navbar{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height: 95px;
-}
-
 .logo{
     position: absolute;
     left: 50%;
