@@ -89,9 +89,25 @@ justify-content:space-between;
 
 }
 
+
+.navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 95px;
+}
+
+.logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+
 .logo img{
 
-height:58px;
+height: 80px;
+    width: auto;
 
 }
 
@@ -107,11 +123,11 @@ nav a{
 
 text-decoration:none;
 
-color:#555;
+color:#444;
 
-font-weight:600;
+font-weight:1200;
 
-transition:.25s;
+transition:.3s;
 
 }
 
@@ -119,6 +135,10 @@ nav a:hover{
 
 color:var(--gold);
 
+}
+
+.nav-spacer{
+    flex: 1;
 }
 
 /* ===================== */
