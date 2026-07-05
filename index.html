@@ -37,8 +37,8 @@
 
           <p class="hero-text">
             Bei HOT-YELLOW by SARI's dreht sich alles um professionelle Laser-Haarentfernung.
-            Wir behandeln sowohl Männer als auch Frauen. Für die Bikinizone der Frau steht
-            eine weibliche Expertin zur Verfügung.
+            Wir behandeln sowohl Männer als auch Frauen. 
+            Männer werden von einem Mann behandelt, Frauen von einer Frau.
           </p>
 
           <div class="hero-actions">
@@ -126,6 +126,47 @@
         </p>
       </div>
     </section>
+
+    <section class="slider">
+    <div class="slider-container">
+        <img id="slider-image" src="assets/images/studio_1.jpeg" alt="Studio Bild">
+
+        <button class="slider-btn prev" onclick="changeSlide(-1)">
+            &#10094;
+        </button>
+
+        <button class="slider-btn next" onclick="changeSlide(1)">
+            &#10095;
+        </button>
+    </div>
+</section>
+
+<script>
+const images = [
+    "assets/images/studio_1.jpeg",
+    "assets/images/studio_2.jpeg",
+    "assets/images/studio_3.jpeg",
+    "assets/images/studio_4.jpeg",
+    "assets/images/studio_5.jpeg"
+];
+
+let current = 0;
+const slider = document.getElementById("slider-image");
+
+function showSlide(index) {
+    current = (index + images.length) % images.length;
+    slider.src = images[current];
+}
+
+function changeSlide(direction) {
+    showSlide(current + direction);
+}
+
+// Automatischer Wechsel alle 4 Sekunden
+setInterval(() => {
+    changeSlide(1);
+}, 4000);
+</script>
 
     <section id="kontakt" class="section contact">
       <div class="container narrow">
