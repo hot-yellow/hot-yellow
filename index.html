@@ -240,10 +240,116 @@ alt="Logo">
 
     </div>
 
+<section id="studio" class="section studio">
+
+    <div class="container studio-grid">
+
+        <div>
+
+            <p class="section-label">
+                Unser Studio
+            </p>
+
+            <h2>
+                Moderne Räume.
+                Ruhige Atmosphäre.
+                Persönliche Betreuung.
+            </h2>
+
+            <p class="section-text">
+
+                Wir möchten, dass du dich vom ersten Moment an wohlfühlst.
+                Saubere Behandlungsräume, hochwertige Geräte und eine entspannte
+                Atmosphäre stehen bei uns im Mittelpunkt.
+
+            </p>
+
+            <div class="studio-features">
+
+                <div>✔ Hygienische Behandlungsräume</div>
+                <div>✔ Modernste Lasertechnik</div>
+                <div>✔ Individuelle Beratung</div>
+                <div>✔ Kostenlose Erstberatung</div>
+
+            </div>
+
+        </div>
+
+        <div class="slider-container">
+
+            <img
+                id="slider-image"
+                src="assets/images/studio_1.jpeg"
+                alt="Studio">
+
+            <button
+                class="slider-btn prev"
+                onclick="changeSlide(-1)">
+                &#10094;
+            </button>
+
+            <button
+                class="slider-btn next"
+                onclick="changeSlide(1)">
+                &#10095;
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+    
 </section>
   
 </main>
 
+<script>
+
+const images=[
+
+"assets/images/studio_1.jpeg",
+"assets/images/studio_2.jpeg",
+"assets/images/studio_3.jpeg",
+"assets/images/studio_4.jpeg",
+"assets/images/studio_5.jpeg"
+
+];
+
+let current=0;
+
+const slider=document.getElementById("slider-image");
+
+function showSlide(i){
+
+current=(i+images.length)%images.length;
+
+slider.style.opacity=0;
+
+setTimeout(()=>{
+
+slider.src=images[current];
+
+slider.style.opacity=1;
+
+},180);
+
+}
+
+function changeSlide(direction){
+
+showSlide(current+direction);
+
+}
+
+setInterval(()=>{
+
+changeSlide(1);
+
+},4500);
+
+</script>
+  
 </body>
 
 </html>
