@@ -111,6 +111,36 @@ z-index:100;
 }
 
 
+.menu-toggle{
+    display:none;
+}
+
+@media (max-width:900px){
+
+    .nav{
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .logo{
+        position: static;
+        transform: none;
+        order: -1;
+    }
+
+    .logo img{
+        height: 70px;
+    }
+
+    nav{
+        display: flex;
+        gap: 20px;
+    }
+
+}
+
+
+
 
 nav a{
 
@@ -796,31 +826,3 @@ font-size:22px;
 
 }
 }
-
-
-
-@media (max-width:900px){
-
-    .nav{
-        justify-content: space-between;
-        padding: 0 20px;
-    }
-
-    .logo{
-        position: static;
-        transform: none;
-        order: -1;
-    }
-
-    .logo img{
-        height: 70px;
-    }
-
-    nav{
-        display: flex;
-        gap: 20px;
-    }
-
-}
-
-
