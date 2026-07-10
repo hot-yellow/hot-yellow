@@ -90,3 +90,21 @@ slider.addEventListener("touchend", e => {
     }
 
 });
+
+
+const menuButton = document.querySelector(".menu-toggle");
+const nav = document.querySelector("nav");
+
+menuButton.addEventListener("click", () => {
+    nav.classList.toggle("active");
+
+    menuButton.textContent =
+        nav.classList.contains("active") ? "✕" : "☰";
+});
+
+document.querySelectorAll("nav a").forEach(link => {
+    link.addEventListener("click", () => {
+        nav.classList.remove("active");
+        menuButton.textContent = "☰";
+    });
+});
