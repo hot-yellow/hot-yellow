@@ -104,7 +104,7 @@ z-index:100;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 40px;   /* Abstand zwischen Leistungen, Studio und Kontakt */
+    gap: 100px;   /* Abstand zwischen Leistungen, Studio und Kontakt */
 
 }
    
