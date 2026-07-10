@@ -100,7 +100,7 @@ z-index:100;
 
 .nav{
     position: relative;
-    height: 50px;
+    height: 85px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
