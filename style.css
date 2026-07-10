@@ -104,14 +104,12 @@ z-index:100;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    gap: 40px;   /* Abstand zwischen Leistungen, Studio und Kontakt */
+
+}
    
 }
 
-nav{
-
-display:flex;
-gap: 40px;   /* Abstand zwischen Leistungen, Studio und Kontakt */
-}
 
 
 nav a{
@@ -800,5 +798,29 @@ font-size:22px;
 }
 
 
+
+@media (max-width:900px){
+
+    .nav{
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .logo{
+        position: static;
+        transform: none;
+        order: -1;
+    }
+
+    .logo img{
+        height: 70px;
+    }
+
+    nav{
+        display: flex;
+        gap: 20px;
+    }
+
+}
 
 
