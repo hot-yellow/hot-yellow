@@ -85,7 +85,49 @@ content="HOT-YELLOW Frankfurt - Dauerhafte Haarentfernung, Aquafacial, Microneed
     background: var(--gold);
     color: white;
 }
-    
+
+    /* ---------- Mobile Cookie Banner ---------- */
+@media (max-width: 768px) {
+
+    .cookie-banner {
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+    }
+
+    .cookie-box {
+        padding: 18px;
+        border-radius: 18px;
+    }
+
+    .cookie-content {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .cookie-box h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .cookie-box p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .cookie-buttons {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cookie-button {
+        width: 100%;
+        padding: 15px;
+        font-size: 15px;
+    }
+
+}
 </style>
     
 </head>
@@ -128,7 +170,7 @@ content="HOT-YELLOW Frankfurt - Dauerhafte Haarentfernung, Aquafacial, Microneed
                     type="button"
                     class="cookie-button cookie-accept"
                      onclick="saveCookieConsent('accepted')">
-                    Alle akzeptieren
+                    Verstanden
                 </button>
 
             </div>
@@ -157,6 +199,9 @@ content="HOT-YELLOW Frankfurt - Dauerhafte Haarentfernung, Aquafacial, Microneed
 
     </div>
 
+
+
+    
 </header>
 
 <main>
