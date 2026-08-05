@@ -599,7 +599,25 @@ changeSlide(1);
 },30000);
 
 </script>
-  
+
+    /* COOKIE BANNER SCRIPT*/
+
+<script>
+
+function saveCookieConsent(choice) {
+
+    localStorage.setItem(
+        "hot-yellow-cookie-consent",
+        choice
+    );
+
+    document
+        .getElementById("cookie-banner")
+        .style.display = "none";
+}
+
+</script>
+    
 </body>
 
 </html>
