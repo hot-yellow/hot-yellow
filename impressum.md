@@ -30,4 +30,4 @@ Wir sind weder verpflichtet noch bereit, an Streitbeilegungsverfahren vor einer 
 
 ---
 
-**Stand: 05. August 2026**
+**Stand:2026**
