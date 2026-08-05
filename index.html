@@ -117,11 +117,97 @@ content="HOT-YELLOW Frankfurt - Dauerhafte Haarentfernung, Aquafacial, Microneed
 
 
 
+/*Cookie Banner mobile Darstellung*/
 
+    @media(max-width:700px){
+
+    .cookie-banner{
+        left:12px;
+        right:12px;
+        bottom:12px;
+    }
+
+    .cookie-box{
+        padding:22px 20px;
+    }
+
+    .cookie-content{
+        grid-template-columns:1fr;
+        gap:18px;
+    }
+
+    .cookie-buttons{
+        flex-direction:column;
+    }
+
+    .cookie-button{
+        width:100%;
+    }
+
+}
 
     
 <body>
 
+    /*==================
+    Cookie Body*/
+    
+<div id="cookie-banner" class="cookie-banner">
+
+    <div class="cookie-box">
+
+        <div class="cookie-content">
+
+            <div>
+
+                <h3>🍪 Deine Privatsphäre</h3>
+
+                <p>
+                    Wir verwenden auf dieser Website aktuell nur technisch
+                    notwendige Technologien. Optionale Analyse- oder
+                    Marketing-Cookies werden derzeit nicht eingesetzt.
+
+                    Mehr Informationen findest du in unserer
+                    <a href="datenschutz.html">
+                        Datenschutzerklärung
+                    </a>.
+                </p>
+
+            </div>
+
+            <div class="cookie-buttons">
+
+                <button
+                    type="button"
+                    class="cookie-button cookie-settings"
+                    onclick="openCookieSettings()">
+                    Einstellungen
+                </button>
+
+                <button
+                    type="button"
+                    class="cookie-button cookie-necessary"
+                    onclick="saveCookieConsent('necessary')">
+                    Nur notwendige
+                </button>
+
+                <button
+                    type="button"
+                    class="cookie-button cookie-accept"
+                    onclick="saveCookieConsent('all')">
+                    Alle akzeptieren
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+    
 <header>
 
     <div class="container nav">
