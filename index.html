@@ -665,6 +665,56 @@ changeSlide(1);
 },30000);
 
 </script>
+
+
+    /*================COOKIE BANNER==========*/
+
+    <script>
+
+const COOKIE_CONSENT_KEY = "hot-yellow-cookie-consent";
+
+function getCookieConsent(){
+
+    return localStorage.getItem(COOKIE_CONSENT_KEY);
+
+}
+
+function saveCookieConsent(choice){
+
+    localStorage.setItem(
+        COOKIE_CONSENT_KEY,
+        JSON.stringify({
+            choice: choice,
+            date: new Date().toISOString()
+        })
+    );
+
+    document
+        .getElementById("cookie-banner")
+        .classList.remove("show");
+
+}
+
+function initCookieBanner(){
+
+    const consent = getCookieConsent();
+
+    if(!consent){
+
+        document
+            .getElementById("cookie-banner")
+            .classList.add("show");
+
+    }
+
+}
+
+document.addEventListener(
+    "DOMContentLoaded",
+    initCookieBanner
+);
+
+</script>
   
 </body>
 
