@@ -1,13 +1,13 @@
 # Datenschutzerklärung
 
-**Stand: 05. August 2026**
+**Stand: 2026**
 
 ## 1. Verantwortlicher
 
 Verantwortlich für die Verarbeitung personenbezogener Daten auf dieser Website ist:
 
 **HOT-YELLOW**  
-**[Vorname Nachname / vollständiger Firmenname]**  
+**Ferkan Sari**  
 Eschersheimer Landstraße 400  
 60433 Frankfurt am Main  
 Deutschland
@@ -15,7 +15,7 @@ Deutschland
 E-Mail: studio.hotyellow@gmail.com  
 Telefon / WhatsApp: 0177 2071281
 
-> **Bitte vor Veröffentlichung ergänzen:** Anstelle von „[Vorname Nachname / vollständiger Firmenname]“ muss die tatsächlich verantwortliche Person bzw. das Unternehmen eingetragen werden.
+
 
 ## 2. Geltungsbereich
 
@@ -157,4 +157,4 @@ Es gilt die jeweils auf **www.hot-yellow.com** veröffentlichte aktuelle Fassung
 
 ---
 
-**Stand: 05. August 2026**
+**Stand:2026**
